@@ -1,5 +1,5 @@
 -- What was the most purchased track of 2013?
--- Every track listed in the table --
+
 SELECT tracks.Name AS Track_Name, COUNT(*) AS purchase
 FROM tracks
 JOIN invoice_items  ON tracks.TrackId = invoice_items.TrackId
